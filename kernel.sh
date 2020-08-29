@@ -39,14 +39,14 @@ KERNEL_DIR=$PWD
 ZIPNAME="SiLonT-TEST"
 
 # The name of the device for which the kernel is built
-MODEL="Redmi Note 5 Pro"
+MODEL="Redmi Note 6 Pro"
 
 # The codename of the device
-DEVICE="whyred"
+DEVICE="tulip"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=whyred_defconfig
+DEFCONFIG=tulip_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
@@ -133,7 +133,7 @@ DATE=$(TZ=Asia/Jakarta date +"%Y%m%d-%T")
 	TC_DIR=$KERNEL_DIR/clang-llvm
 
 	msg "|| Cloning Anykernel ||"
-	git clone --depth 1 --no-single-branch https://github.com/Reinazhard/AnyKernel3.git -b master
+	git clone --depth 1 --no-single-branch https://github.com/Reinazhard/AnyKernel3.git -b tulip
 }
 
 ##------------------------------------------------------##
