@@ -39,14 +39,14 @@ KERNEL_DIR=$PWD
 ZIPNAME="SiLonT-TEST"
 
 # The name of the device for which the kernel is built
-MODEL="Redmi Note 9 Pro"
+MODEL="Realmek 5"
 
 # The codename of the device
-DEVICE="joyeuse"
+DEVICE="RMX1911"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=cust_defconfig
+DEFCONFIG=vendor/rmx1911-perf_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
@@ -68,7 +68,7 @@ DEF_REG=0
 
 # Build dtbo.img (select this only if your source has support to building dtbo.img)
 # 1 is YES | 0 is NO(default)
-BUILD_DTBO=1
+BUILD_DTBO=0
 
 # Sign the zipfile
 # 1 is YES | 0 is NO
