@@ -269,6 +269,7 @@ gen_zip() {
 		tg_post_build "$ZIP_FINAL" "$CHATID" "✅ Build took : $((DIFF / 60)) minute(s) and $((DIFF % 60)) second(s)"
 	fi
 	cd ..
+	rm -rf AnyKernel3
 }
 
 clone
